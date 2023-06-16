@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url(amazing-2451327_1920\ \(1\).jpg);
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer"
+    "copy copy copy copy";
+    min-width: 410px;
+}
+.container-hombre{
+    background-image: url(surfing-2192675_1920\ \(1\).jpg);
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:
+    "header header header header"
+    "main2 main2 main2 main2"
+    "footer footer footer footer"
+    "copy copy copy copy";
+    min-width: 410px;
+}
+.container-mujer{
+    background-image: url(beach-2858720_1920\ \(1\).jpg);
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:
+    "header header header header"
+    "main3 main3 main3 main3"
+    "footer footer footer footer"
+    "copy copy copy copy";
+    min-width: 610px;
+}
+.logo{
+    font-family: 'Satisfy';
+    font-size: 3em;
+    color: goldenrod;
+    margin-right: 70px;
+}
+.header{
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.menu{
+    font-family: 'Righteous';
+    color: goldenrod;
+    display: flex;
+    justify-content: space-around
+}
+.menu a{
+    color: goldenrod;
+    padding: 30px;
+}
+.menu a:hover{
+    transform: scale(1.4);
+}  
+.main-index{
+    grid-area: main;
+}
+.oferta{
+    text-align: center;
+    color: azure;
+    line-height: 70px;
+    grid-area: oferta;
+}
+.oferta h2{
+    font-size: 3.5em;
+    font-family: 'Dancing Script';
+}
+.oferta p{
+    font-size: 1.5em;
+    margin-bottom: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.verano{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    line-height:75px;
+    font-family: 'Righteous';
+    grid-area: verano;
+}
+.verano img{
+    border-radius: 10%;
+    width: 60%;
+}
+.verano p{
+    color: azure;
+    font-size: 1.5em;
+}
+.main-hombre{
+    grid-area: main2;
+}
+.main-hombre p, .main-mujer p{
+    font-size: 1.5em;
+}
+.main-mujer{
+    grid-area: main3;
+}
+.titulo-hombre, .titulo-mujer{
+    font-size: 1.5em;
+    font-family: 'Righteous';
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-hombre, .menu-mujer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Righteous';
+    margin-bottom: 50px;
+}
+.menu2-hombre, .menu2-mujer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Righteous';
+    margin-bottom: 50px;
+}
+.main-hombre img, .main-mujer img{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+.bañadores:hover{
+    transform: scale(1.1);
+}
+.casual:hover{
+    transform: scale(1.1);
+}
+.camisas:hover{
+    transform: scale(1.1);
+}
+.cortos:hover{
+    transform: scale(1.1);
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.footer{
+    background-color: black;
+    display: flex;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: footer;
+}
+.copy{
+    background-color: black;
+    color: azure;
+    text-align: center;
+    padding-bottom: 20px;
+    grid-area: copy;
+}
+.hombre-verano:hover{
+    transform: scale(1.1);
+}
+.mujer-verano:hover{
+    transform: scale(1.1);
+}
+.redes{
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    margin: 20px;
+    grid-area: redes;
+}
+.redes ul{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.redes ul li{
+    margin: 10px;
+}
+.redes ul li:hover{
+    transform: scale(1.5);
+}
+.nosotros{
+    background-color: black;
+    width: 50%;
+    text-align: center;
+    margin: 20px;
+    grid-area: nosotros;
+}
+.nosotros ul li{
+    margin: 10px;
+}
+@media (min-width: 481px) and (max-width: 962px) {
+   .header{
+    display: block;
+    text-align: center;
+   }
+   .logo{
+    margin-right: 0;
+   }
+}
+@media (max-width: 480px) {
+    .header{
+        display: block;
+        text-align: center;
+       }
+       .verano, .menu-hombre, .menu2-hombre, .menu-mujer, .menu2-mujer{
+        display: block;
+       }
+       .footer{
+        flex-direction: column;
+        align-items: center;
+       }
+       .logo{
+        margin-right: 0;
+       }
+      
+}
