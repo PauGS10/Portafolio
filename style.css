@@ -25,7 +25,7 @@
     "main2 main2 main2 main2"
     "footer footer footer footer"
     "copy copy copy copy";
-    min-width: 410px;
+    min-width: 610px;
 }
 .container-mujer{
     background-image: url(beach-2858720_1920\ \(1\).jpg);
@@ -53,6 +53,7 @@
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .menu{
     font-family: 'Righteous';
