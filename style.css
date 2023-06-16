@@ -13,7 +13,7 @@
     "main main main main"
     "footer footer footer footer"
     "copy copy copy copy";
-    min-width: 410px;
+    min-width: 680px;
 }
 .container-hombre{
     background-image: url(surfing-2192675_1920\ \(1\).jpg);
@@ -72,7 +72,7 @@
 }
 .oferta{
     text-align: center;
-    color: azure;
+    color:  rgb(33, 33, 161);
     line-height: 70px;
     grid-area: oferta;
 }
@@ -98,7 +98,7 @@
     width: 60%;
 }
 .verano p{
-    color: azure;
+    color:  rgb(33, 33, 161);
     font-size: 1.5em;
 }
 .main-hombre{
